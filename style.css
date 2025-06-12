@@ -1,0 +1,95 @@
+:root {
+  --base: #1b1b1c;
+  --light: rgba(21, 225, 164, .678);
+  --mid: rgb(29, 179, 134);
+  --faded: rgba(29, 179, 134, 0.1);
+  --purple-light: #f0e9fd;
+  --purple: #7637ee;
+
+  --green: #DFF2D8;
+  --lime: #C6DEA6;
+  --teal: #7EBDC3;
+  --rose: #7A6263;
+  --cream: #CED097;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: 400;
+}
+
+body {
+  background: #fefefe;
+  color: var(--base);
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  border: 1px solid var(--faded);
+  padding: 2rem;
+}
+
+header nav {
+  display: flex;
+  gap: 1.5rem;
+  border-bottom: 1px solid var(--faded);
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--base);
+  border-bottom: 2px solid transparent;
+}
+
+nav a.active {
+  color: var(--mid);
+  border-bottom: 2px solid var(--mid);
+}
+
+.card {
+  border: 1px dashed var(--mid);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+}
+
+.green {
+  background-color: var(--green);
+}
+
+.purple {
+  background-color: var(--purple-light);
+}
+
+.purple-light {
+  background-color: var(--lime);
+}
+
+.faded {
+  background-color: var(--faded);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li::before {
+  content: "→ ";
+  color: var(--mid);
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 14px;
+  color: var(--rose);
+}
