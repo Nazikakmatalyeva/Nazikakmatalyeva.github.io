@@ -1,151 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nazik Akmatalyeva | Personal Website</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --soft-green: #DFF2D8;
-      --minty: #C6DEA6;
-      --teal: #7EBDC3;
-      --mauve: #7A6263;
-      --sage: #CED097;
-      --bg-dark: #0F0F0F;
-      --bg-light: #121212;
-      --text-light: #F9F9F9;
-      --text-muted: #CCC;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: var(--bg-dark);
-      color: var(--text-light);
-      line-height: 1.6;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    header {
-      background: var(--bg-light);
-      padding: 1.5rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    }
-
-    header h1 {
-      font-weight: 800;
-      font-size: 1.8rem;
-      color: var(--teal);
-    }
-
-    nav a {
-      margin-left: 1.5rem;
-      text-decoration: none;
-      color: var(--soft-green);
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: var(--minty);
-    }
-
-    main {
-      flex: 1;
-      padding: 4rem 2rem;
-      max-width: 960px;
-      margin: auto;
-    }
-
-    section {
-      margin-bottom: 3rem;
-    }
-
-    h2 {
-      color: var(--minty);
-      margin-bottom: 0.5rem;
-    }
-
-    p, li {
-      color: var(--text-muted);
-      margin-bottom: 0.5rem;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    footer {
-      background: var(--bg-light);
-      color: #888;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nazik Akmatalyeva</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Nazik Akmatalyeva</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <div class="container">
+    <header>
+      <nav>
+        <a href="#" class="active">home</a>
+        <a href="#">experience</a>
+        <a href="#">education</a>
+        <a href="#">contact</a>
+      </nav>
+    </header>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I'm a hard-working student with hands-on experience helping others through library, tutoring, and food bank work. I'm known for being organized, reliable, and a great team player. I speak English, Kyrgyz, and Russian, and I love learning and making a positive impact through tech, volunteering, and leadership.</p>
-    </section>
+    <main>
+      <section class="intro card green">
+        <h1>Hi, I'm Nazik 🌿</h1>
+        <p>
+          I'm a high school student, Girls Who Code leader, and aspiring software engineer. I love learning new things, organizing my community, and building fun tech projects.
+        </p>
+        <p>
+          Fluent in Kyrgyz, Russian, and English. Skilled in HTML, JavaScript, Python, CAD, soldering, and tutoring.
+        </p>
+        <p>
+          Reach me at <a href="mailto:akmatalyevanazik@gmail.com">email</a> 📬
+        </p>
+      </section>
 
-    <section id="experience">
-      <h2>Experience</h2>
-      <ul>
-        <li><strong>FORA / Lincolnwood Library – Tutor & Volunteer (2023–2024)</strong><br>Helped kids with learning, explained concepts clearly, kept the library clean and welcoming.</li>
-        <li><strong>Greater Chicago Food Depository – Volunteer (2022–2024)</strong><br>Sorted, packed, and distributed over 5,000 lbs of food. Worked in small teams and greeted guests.</li>
-        <li><strong>After School Matters Apprenticeships (2023–2025)</strong>
-          <ul>
-            <li>Web Dev: Built websites using HTML and JavaScript.</li>
-            <li>3D Printing: Designed and printed objects, taught beginners.</li>
-            <li>Electronics: Built circuits, practiced soldering and breadboarding.</li>
-            <li>College Prep: Learned study skills and time management.</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
+      <section class="card purple">
+        <h2>Experience</h2>
+        <ul>
+          <li>📚 Tutor & Volunteer – FORA / Lincolnwood Library (2023–2024)</li>
+          <li>🤖 Web Dev, CAD, Electronics – After School Matters (2023–2025)</li>
+          <li>🥫 Volunteer – Greater Chicago Food Depository (2022–2024)</li>
+        </ul>
+      </section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>Von Steuben MSC (2023–2027)</strong><br>5.0 GPA (weighted), Ranked 4th out of 460, Member of several clubs including GWC President, Model UN Secretary, National Honors Society.</li>
-        <li><strong>Northwestern Academy</strong><br>College-readiness and academic enrichment program.</li>
-      </ul>
-    </section>
+      <section class="card purple-light">
+        <h2>Education</h2>
+        <p><strong>Von Steuben MSC (2023–2027)</strong></p>
+        <ul>
+          <li>5.0 GPA (weighted)</li>
+          <li>Rank: 4th out of 460 students</li>
+          <li>Clubs: GWC President, Model UN Secretary, NHS, Debate</li>
+        </ul>
+      </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:akmatalyevanazik@gmail.com">akmatalyevanazik@gmail.com</a></p>
-      <p>Phone: 773-977-6631</p>
-      <p>Languages: English, Kyrgyz, Russian</p>
-    </section>
-  </main>
+      <section class="card faded">
+        <h2>Achievements</h2>
+        <ul>
+          <li>🏅 1st Place in multiple state Judo championships (2019–2024)</li>
+          <li>🥉 3rd Place, National Judo Championship (2022)</li>
+          <li>💻 IC3 & Python Certifications (2025)</li>
+        </ul>
+      </section>
+    </main>
 
-  <footer>
-    © 2025 Nazik Akmatalyeva
-  </footer>
+    <footer>
+      <p><small>&copy; 2025 Nazik Akmatalyeva</small></p>
+    </footer>
+  </div>
 </body>
 </html>
